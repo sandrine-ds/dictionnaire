@@ -1,3 +1,8 @@
+<?php
+require 'form.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +11,10 @@
     <title>Traducteur</title>
 </head>
 <body>
+
+<form action="form.php" method="POST" role="form" >
     <h1 style="color: grey">Traducteur Anglais - Français</h1>
-    <label for="mot">Mot:</label>
+    <label for="mot">Mot:</label><br>
     <input type="text" id="mot" name="mot">
     <br><br>
     <label for="traduction">Sens de traduction:</label>
@@ -17,6 +24,8 @@
     </select>
 
     <br><br>
-    <input type="button" value="Traduire">
+    <input type="submit" name="submit" value="Traduire">
+    </form>
+
 </body>
 </html>
